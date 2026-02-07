@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0px;
+    padding: 20px;
+}
+
+h1 {
+    /* font-size: 3em; */
+    margin-top: 50px;
+    color: #fff;
+}
+
+h2 {
+    /* font-size: 3em; */
+    margin-top: 20px;
+    color: #fff;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #e85c50;
+}
+
+.heart {
+    font-size: 5em;
+    color: red;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    /* margin: 20px; */
+    /* padding: 20px; */
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff6f61;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 27px;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container p, .container h2 {
+    color: #888;
+    font-size: 1em;
+    margin: 20px;
+    text-align: justify;
+}
+
+.container.left .content {
+    margin-left: 0;
+}
+
+.container.right .content {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
